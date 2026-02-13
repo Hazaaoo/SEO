@@ -727,6 +727,27 @@
 <script type="application/ld+json">
     {
     "context": "https://schema.org", //ресурс schema.org
+      "@type": "FAQPage", //тип faq страницы
+  "mainEntity": [ //главные события
+    {
+      "@type": "Question", //тип вопрос ответ
+      "name": "Как заказать косметику",
+      "acceptedAnswer": { //решенный ответ
+        "@type": "Answer", //тип ответа
+        "text": "Перейдите в каталог косметики, выберите желаемый товар и добавьте его в корзину"
+      }
+    }
+]
+},
+      "@type": "ItemList", //тип списков
+  "name": "Полезные разделы сайта",
+  "itemListElement": [ //событие списка
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Официальный сайт",
+      "url": "https://seo-iota-beryl.vercel.app/"
+    },
       "@type": "BreadcrumbList", //тип хлебные крошки
   "itemListElement": [ //событие списка
     {
@@ -747,16 +768,10 @@
     "@graph": [ //сразу несколько типов
         {//тип 1
         "@type": "WebPage", //описание что за сайт
-        "name": "SEO Блог",
-        "description": "Практические советы по SEO и продвижению бизнеса",
-        "url": "https://resultup.agency/blog"
+        "name": "Korean косметика",
+        "description": "Сайт для покупки оригинальной Корейской косметики с доставкой по РФ",
+        "url": "https://seo-iota-beryl.vercel.app/"
         },
-        {//тип 2
-        "@type": "Blog", //описание блога (на странице блога использовать)
-        "name": "SEO Meat блог",
-        "description": "Обучение и материалы по SEO-оптимизации",
-        "url": "https://seomeat.ru/blog"
-        }
     ]
     }
     </script>
