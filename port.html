@@ -1,856 +1,208 @@
-    <!DOCTYPE html>
-    <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>K-Beauty Market | Корейская косметика&#128132;</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>K-Beauty Market | Корейская косметика купить в России | Оригинальная косметика из Кореи</title>
-        <meta name="description" content="Купить оригинальную корейскую косметику с доставкой по России. Уход за кожей, маски, солнцезащитные средства, пробиотики. Бесплатная доставка от 3000₽. Гарантия подлинности.">
-        <meta name="keywords" content="корейская косметика, купить косметику из Кореи, K-beauty, уход за кожей, корейские маски, солнцезащитный крем корея, пробиотики для кожи, Beauty of Joseon, Laneige, Fraijour">
-        <meta name="author" content="K-Beauty Market">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Beauty Market | Портфолио и наши бренды</title>
+    <meta name="description" content="Портфолио K-Beauty Market: ведущие корейские бренды (COSRX, Beauty of Joseon, Laneige) и успешные коллаборации. Только оригинальная продукция.">
+    <meta name="keywords" content="бренды корейской косметики, портфолио, COSRX, Beauty of Joseon, Laneige, партнеры K-beauty">
+    <meta name="author" content="K-Beauty Market">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="K-Beauty Market | Портфолио брендов">
+    <meta property="og:description" content="Ведущие бренды корейской косметики в нашем портфолио. Работаем напрямую с производителями.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kbeauty-market.ru/port.html">
+    <meta property="og:image" content="https://kbeauty-market.ru/images/og-image.jpg">
+    
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://kbeauty-market.ru/port.html">
+    
+    <!-- Fonts & Icons (как в основном сайте) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Используем ТОТ ЖЕ стиль, что и на главной -->
+    <style>
+        /* --- ВСТАВЬТЕ СЮДА ВЕСЬ CSS ИЗ index.html (или подключите общий файл) --- */
+        :root {
+            --primary: #ff6b8b; --secondary: #a18cd1; --accent: #3bd1b8; --dark: #2d3047;
+            --light: #f9f7fe; --gray: #eaeaea; --text: #333333; --text-light: #666666;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.08); --radius: 12px; --transition: all 0.3s ease;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; color: var(--text); background-color: var(--light); line-height: 1.6; }
+        .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
-        <meta property="og:title" content="K-Beauty Market | Оригинальная корейская косметика в России">
-        <meta property="og:description" content="Интернет-магазин оригинальной корейской косметики с доставкой по всей России. Уход за кожей, маски, солнцезащитные средства.">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://kbeauty-market.ru">
-        <meta property="og:image" content="https://kbeauty-market.ru/images/og-image.jpg">
-        <meta property="og:locale" content="ru_RU">
-        <meta property="og:site_name" content="K-Beauty Market">
+        /* Header, Navigation, Footer - скопируйте из index.html */
+        header { background-color: white; box-shadow: var(--shadow); position: sticky; top: 0; z-index: 1000; }
+        .header-container { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+        .logo { display: flex; align-items: center; font-family: 'Noto Sans KR', sans-serif; font-weight: 700; font-size: 1.8rem; color: var(--dark); text-decoration: none; }
+        .logo i { color: var(--primary); margin-right: 8px; font-size: 2rem; } .logo span { color: var(--primary); }
+        .search-bar { display: flex; flex: 0 1 500px; margin: 0 30px; }
+        .search-bar input { flex-grow: 1; padding: 12px 20px; border: 2px solid var(--gray); border-radius: var(--radius) 0 0 var(--radius); font-size: 1rem; outline: none; transition: var(--transition); }
+        .search-bar input:focus { border-color: var(--accent); }
+        .search-bar button { background-color: var(--accent); color: white; border: none; padding: 0 25px; border-radius: 0 var(--radius) var(--radius) 0; cursor: pointer; transition: var(--transition); }
+        .search-bar button:hover { background-color: #2abaa3; }
+        .header-icons { display: flex; gap: 25px; }
+        .header-icons a { color: var(--dark); font-size: 1.3rem; position: relative; transition: var(--transition); }
+        .header-icons a:hover { color: var(--primary); }
+        .cart-count { position: absolute; top: -8px; right: -8px; background-color: var(--primary); color: white; font-size: 0.7rem; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+        nav { background-color: var(--dark); }
+        .nav-container { display: flex; justify-content: space-between; }
+        .nav-links { display: flex; list-style: none; }
+        .nav-links li { position: relative; }
+        .nav-links a { color: white; text-decoration: none; padding: 18px 20px; display: block; transition: var(--transition); font-weight: 500; }
+        .nav-links a:hover { background-color: rgba(255, 255, 255, 0.1); }
+        .dropdown { position: absolute; background-color: white; min-width: 220px; box-shadow: var(--shadow); border-radius: 0 0 var(--radius) var(--radius); display: none; z-index: 100; }
+        .dropdown a { color: var(--text); padding: 12px 20px; border-bottom: 1px solid var(--gray); }
+        .dropdown a:hover { background-color: var(--light); color: var(--primary); }
+        .nav-links li:hover .dropdown { display: block; }
+        .promo-banner { background-color: var(--primary); color: white; padding: 10px 0; text-align: center; font-weight: 500; font-size: 0.95rem; }
+        .section-title { font-size: 1.8rem; margin-bottom: 30px; color: var(--dark); position: relative; padding-bottom: 10px; }
+        .section-title:after { content: ''; position: absolute; bottom: 0; left: 0; width: 60px; height: 3px; background-color: var(--accent); }
+        footer { background-color: var(--dark); color: white; padding: 60px 0 30px; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        .footer-column h3 { font-size: 1.3rem; margin-bottom: 20px; position: relative; padding-bottom: 10px; }
+        .footer-column h3:after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background-color: var(--accent); }
+        .footer-links { list-style: none; } .footer-links li { margin-bottom: 12px; }
+        .footer-links a { color: #b0b0b0; text-decoration: none; transition: var(--transition); }
+        .footer-links a:hover { color: var(--accent); padding-left: 5px; }
+        .social-icons { display: flex; gap: 15px; margin-top: 20px; }
+        .social-icons a { display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: rgba(255, 255, 255, 0.1); border-radius: 50%; color: white; transition: var(--transition); }
+        .social-icons a:hover { background-color: var(--accent); transform: translateY(-5px); }
+        .newsletter input { width: 100%; padding: 14px; border: none; border-radius: var(--radius); margin-bottom: 15px; font-family: 'Poppins', sans-serif; }
+        .copyright { text-align: center; padding-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.1); color: #b0b0b0; font-size: 0.9rem; }
         
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="K-Beauty Market | Корейская косметика премиум-класса">
-        <meta name="twitter:description" content="Откройте для себя инновационные средства по уходу за кожей из Южной Кореи. Только оригинальная продукция.">
-        <meta name="twitter:image" content="https://kbeauty-market.ru/images/twitter-card.jpg">
+        /* Стили для портфолио (уникальные) */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .portfolio-card {
+            background: white;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .portfolio-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        .portfolio-header {
+            background: linear-gradient(135deg, var(--secondary), var(--accent));
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .portfolio-header i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        .portfolio-header h3 {
+            font-size: 1.6rem;
+            margin-bottom: 5px;
+        }
+        .portfolio-header p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+        .portfolio-content {
+            padding: 25px;
+            flex-grow: 1;
+        }
+        .portfolio-content h4 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        .portfolio-content ul {
+            list-style: none;
+        }
+        .portfolio-content li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .portfolio-content li i {
+            color: var(--accent);
+            width: 20px;
+            font-size: 1.1rem;
+        }
+        .brand-stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0 0;
+            padding-top: 20px;
+            border-top: 1px dashed var(--gray);
+            text-align: center;
+        }
+        .stat-item {
+            flex: 1;
+        }
+        .stat-number {
+            display: block;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
         
-        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-        <link rel="canonical" href="https://kbeauty-market.ru">
+        /* Блок с брендами-партнерами */
+        .brand-showcase {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin: 50px 0;
+            padding: 30px;
+            background: white;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        .brand-item {
+            text-align: center;
+            min-width: 100px;
+        }
+        .brand-logo-placeholder {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 2rem;
+            color: var(--primary);
+            border: 2px solid var(--gray);
+            transition: var(--transition);
+        }
+        .brand-item:hover .brand-logo-placeholder {
+            border-color: var(--accent);
+            transform: scale(1.05);
+        }
+        .brand-item span {
+            font-weight: 500;
+            color: var(--dark);
+        }
         
-        <meta name="theme-color" content="#ff6b8b">
-        <meta name="mobile-web-app-capable" content="yes">
-        
-        <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            "name": "K-Beauty Market",
-            "url": "https://kbeauty-market.ru",
-            "description": "Интернет-магазин оригинальной корейской косметики",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://kbeauty-market.ru/search?q={search_term_string}",
-                "query-input": "required name=search_term_string"
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
             }
         }
-        </script>       
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-        <style>
-            :root {
-                --primary: #ff6b8b; /* Нежный коралловый */
-                --secondary: #a18cd1; /* Лавандовый */
-                --accent: #3bd1b8; /* Мятный */
-                --dark: #2d3047; /* Темно-синий */
-                --light: #f9f7fe; /* Светлый фон */
-                --gray: #eaeaea;
-                --text: #333333;
-                --text-light: #666666;
-                --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-                --radius: 12px;
-                --transition: all 0.3s ease;
-            }
-
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-
-            body {
-                font-family: 'Poppins', sans-serif;
-                color: var(--text);
-                background-color: var(--light);
-                line-height: 1.6;
-            }
-
-            .container {
-                width: 100%;
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 0 20px;
-            }
-
-            /* Header */
-            header {
-                background-color: white;
-                box-shadow: var(--shadow);
-                position: sticky;
-                top: 0;
-                z-index: 1000;
-            }
-
-            .header-container {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 15px 0;
-            }
-
-            .logo {
-                display: flex;
-                align-items: center;
-                font-family: 'Noto Sans KR', sans-serif;
-                font-weight: 700;
-                font-size: 1.8rem;
-                color: var(--dark);
-                text-decoration: none;
-            }
-
-            .logo i {
-                color: var(--primary);
-                margin-right: 8px;
-                font-size: 2rem;
-            }
-
-            .logo span {
-                color: var(--primary);
-            }
-
-            .search-bar {
-                display: flex;
-                flex: 0 1 500px;
-                margin: 0 30px;
-            }
-
-            .search-bar input {
-                flex-grow: 1;
-                padding: 12px 20px;
-                border: 2px solid var(--gray);
-                border-radius: var(--radius) 0 0 var(--radius);
-                font-size: 1rem;
-                outline: none;
-                transition: var(--transition);
-            }
-
-            .search-bar input:focus {
-                border-color: var(--accent);
-            }
-
-            .search-bar button {
-                background-color: var(--accent);
-                color: white;
-                border: none;
-                padding: 0 25px;
-                border-radius: 0 var(--radius) var(--radius) 0;
-                cursor: pointer;
-                font-size: 1rem;
-                transition: var(--transition);
-            }
-
-            .search-bar button:hover {
-                background-color: #2abaa3;
-            }
-
-            .header-icons {
-                display: flex;
-                gap: 25px;
-            }
-
-            .header-icons a {
-                color: var(--dark);
-                font-size: 1.3rem;
-                position: relative;
-                transition: var(--transition);
-            }
-
-            .header-icons a:hover {
-                color: var(--primary);
-            }
-
-            .cart-count {
-                position: absolute;
-                top: -8px;
-                right: -8px;
-                background-color: var(--primary);
-                color: white;
-                font-size: 0.7rem;
-                width: 18px;
-                height: 18px;
-                border-radius: 50%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            /* Navigation */
-            nav {
-                background-color: var(--dark);
-            }
-
-            .nav-container {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .nav-links {
-                display: flex;
-                list-style: none;
-            }
-
-            .nav-links li {
-                position: relative;
-            }
-
-            .nav-links a {
-                color: white;
-                text-decoration: none;
-                padding: 18px 20px;
-                display: block;
-                transition: var(--transition);
-                font-weight: 500;
-            }
-
-            .nav-links a:hover {
-                background-color: rgba(255, 255, 255, 0.1);
-            }
-
-            .dropdown {
-                position: absolute;
-                background-color: white;
-                min-width: 220px;
-                box-shadow: var(--shadow);
-                border-radius: 0 0 var(--radius) var(--radius);
-                display: none;
-                z-index: 100;
-            }
-
-            .dropdown li {
-                width: 100%;
-            }
-
-            .dropdown a {
-                color: var(--text);
-                padding: 12px 20px;
-                border-bottom: 1px solid var(--gray);
-            }
-
-            .dropdown a:hover {
-                background-color: var(--light);
-                color: var(--primary);
-            }
-
-            .nav-links li:hover .dropdown {
-                display: block;
-            }
-
-            .promo-banner {
-                background-color: var(--primary);
-                color: white;
-                padding: 10px 0;
-                text-align: center;
-                font-weight: 500;
-                font-size: 0.95rem;
-            }
-
-            /* Hero Section */
-            .hero {
-                background: linear-gradient(rgba(45, 48, 71, 0.8), rgba(45, 48, 71, 0.8)), url('https://images.unsplash.com/photo-1556228578-9c360e0b8f3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
-                background-size: cover;
-                background-position: center;
-                color: white;
-                padding: 80px 0;
-                text-align: center;
-                border-radius: 0 0 var(--radius) var(--radius);
-                margin-bottom: 40px;
-            }
-
-            .hero h1 {
-                font-size: 2.8rem;
-                margin-bottom: 15px;
-                font-weight: 700;
-            }
-
-            .hero p {
-                font-size: 1.2rem;
-                max-width: 700px;
-                margin: 0 auto 30px;
-                opacity: 0.9;
-            }
-
-            .btn {
-                display: inline-block;
-                background-color: var(--primary);
-                color: white;
-                padding: 14px 32px;
-                border-radius: 50px;
-                text-decoration: none;
-                font-weight: 600;
-                transition: var(--transition);
-                border: none;
-                cursor: pointer;
-                font-size: 1rem;
-            }
-
-            .btn:hover {
-                background-color: #ff5573;
-                transform: translateY(-3px);
-                box-shadow: 0 7px 15px rgba(255, 107, 139, 0.3);
-            }
-
-            .btn-secondary {
-                background-color: transparent;
-                border: 2px solid white;
-                margin-left: 15px;
-            }
-
-            .btn-secondary:hover {
-                background-color: white;
-                color: var(--primary);
-            }
-
-            /* Categories */
-            .section-title {
-                font-size: 1.8rem;
-                margin-bottom: 30px;
-                color: var(--dark);
-                position: relative;
-                padding-bottom: 10px;
-            }
-
-            .section-title:after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 60px;
-                height: 3px;
-                background-color: var(--accent);
-            }
-
-            .categories {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                gap: 25px;
-                margin-bottom: 60px;
-            }
-
-            .category-card {
-                background-color: white;
-                border-radius: var(--radius);
-                overflow: hidden;
-                box-shadow: var(--shadow);
-                transition: var(--transition);
-                text-decoration: none;
-                color: var(--text);
-            }
-
-            .category-card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-            }
-
-            .category-img {
-                height: 180px;
-                overflow: hidden;
-            }
-
-            .category-img img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: var(--transition);
-            }
-
-            .category-card:hover .category-img img {
-                transform: scale(1.05);
-            }
-
-            .category-info {
-                padding: 20px;
-            }
-
-            .category-info h3 {
-                font-size: 1.3rem;
-                margin-bottom: 8px;
-            }
-
-            .category-info p {
-                color: var(--text-light);
-                font-size: 0.9rem;
-            }
-
-            /* Products */
-            .products {
-                margin-bottom: 60px;
-            }
-
-            .product-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-                gap: 30px;
-            }
-
-            .product-card {
-                background-color: white;
-                border-radius: var(--radius);
-                overflow: hidden;
-                box-shadow: var(--shadow);
-                transition: var(--transition);
-                position: relative;
-            }
-
-            .product-card:hover {
-                transform: translateY(-8px);
-                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-            }
-
-            .product-badge {
-                position: absolute;
-                top: 15px;
-                left: 15px;
-                background-color: var(--primary);
-                color: white;
-                padding: 5px 12px;
-                border-radius: 20px;
-                font-size: 0.8rem;
-                font-weight: 600;
-                z-index: 1;
-            }
-
-            .product-img {
-                height: 220px;
-                overflow: hidden;
-                position: relative;
-            }
-
-            .product-img img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: var(--transition);
-            }
-
-            .product-card:hover .product-img img {
-                transform: scale(1.05);
-            }
-
-            .product-actions {
-                position: absolute;
-                bottom: 15px;
-                right: 15px;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                opacity: 0;
-                transition: var(--transition);
-            }
-
-            .product-card:hover .product-actions {
-                opacity: 1;
-            }
-
-            .product-actions button {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background-color: white;
-                border: none;
-                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-                color: var(--dark);
-                cursor: pointer;
-                transition: var(--transition);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .product-actions button:hover {
-                background-color: var(--primary);
-                color: white;
-            }
-
-            .product-info {
-                padding: 20px;
-            }
-
-            .product-brand {
-                color: var(--text-light);
-                font-size: 0.9rem;
-                margin-bottom: 5px;
-            }
-
-            .product-name {
-                font-size: 1.1rem;
-                margin-bottom: 10px;
-                font-weight: 600;
-                line-height: 1.4;
-            }
-
-            .product-price {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                margin-bottom: 15px;
-            }
-
-            .current-price {
-                font-size: 1.3rem;
-                font-weight: 700;
-                color: var(--primary);
-            }
-
-            .original-price {
-                font-size: 1rem;
-                color: var(--text-light);
-                text-decoration: line-through;
-            }
-
-            .product-rating {
-                display: flex;
-                align-items: center;
-                gap: 5px;
-                margin-bottom: 15px;
-            }
-
-            .stars {
-                color: #ffc107;
-            }
-
-            .rating-count {
-                color: var(--text-light);
-                font-size: 0.9rem;
-            }
-
-            .add-to-cart {
-                width: 100%;
-                padding: 12px;
-                background-color: var(--dark);
-                color: white;
-                border: none;
-                border-radius: var(--radius);
-                font-weight: 600;
-                cursor: pointer;
-                transition: var(--transition);
-            }
-
-            .add-to-cart:hover {
-                background-color: var(--primary);
-            }
-
-            /* Features */
-            .features {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 30px;
-                margin-bottom: 60px;
-            }
-
-            .feature {
-                background-color: white;
-                padding: 30px;
-                border-radius: var(--radius);
-                box-shadow: var(--shadow);
-                text-align: center;
-                transition: var(--transition);
-            }
-
-            .feature:hover {
-                transform: translateY(-5px);
-            }
-
-            .feature i {
-                font-size: 2.5rem;
-                color: var(--accent);
-                margin-bottom: 20px;
-            }
-
-            .feature h3 {
-                font-size: 1.3rem;
-                margin-bottom: 10px;
-            }
-
-            .feature p {
-                color: var(--text-light);
-            }
-
-            /* Footer */
-            footer {
-                background-color: var(--dark);
-                color: white;
-                padding: 60px 0 30px;
-            }
-
-            .footer-content {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 40px;
-                margin-bottom: 40px;
-            }
-
-            .footer-column h3 {
-                font-size: 1.3rem;
-                margin-bottom: 20px;
-                position: relative;
-                padding-bottom: 10px;
-            }
-
-            .footer-column h3:after {
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                width: 40px;
-                height: 2px;
-                background-color: var(--accent);
-            }
-
-            .footer-links {
-                list-style: none;
-            }
-
-            .footer-links li {
-                margin-bottom: 12px;
-            }
-
-            .footer-links a {
-                color: #b0b0b0;
-                text-decoration: none;
-                transition: var(--transition);
-            }
-
-            .footer-links a:hover {
-                color: var(--accent);
-                padding-left: 5px;
-            }
-
-            .social-icons {
-                display: flex;
-                gap: 15px;
-                margin-top: 20px;
-            }
-
-            .social-icons a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 40px;
-                height: 40px;
-                background-color: rgba(255, 255, 255, 0.1);
-                border-radius: 50%;
-                color: white;
-                transition: var(--transition);
-            }
-
-            .social-icons a:hover {
-                background-color: var(--accent);
-                transform: translateY(-5px);
-            }
-
-            .newsletter input {
-                width: 100%;
-                padding: 14px;
-                border: none;
-                border-radius: var(--radius);
-                margin-bottom: 15px;
-                font-family: 'Poppins', sans-serif;
-            }
-
-            .copyright {
-                text-align: center;
-                padding-top: 30px;
-                border-top: 1px solid rgba(255, 255, 255, 0.1);
-                color: #b0b0b0;
-                font-size: 0.9rem;
-            }
-
-            /* Responsive */
-            @media (max-width: 992px) {
-                .search-bar {
-                    flex: 0 1 400px;
-                }
-            }
-
-            @media (max-width: 768px) {
-                .header-container {
-                    flex-direction: column;
-                    gap: 15px;
-                }
-                
-                .search-bar {
-                    order: 3;
-                    width: 100%;
-                    margin: 10px 0 0;
-                }
-                
-                .hero h1 {
-                    font-size: 2.2rem;
-                }
-                
-                .nav-container {
-                    flex-direction: column;
-                }
-                
-                .nav-links {
-                    flex-wrap: wrap;
-                    justify-content: center;
-                }
-                
-                .nav-links a {
-                    padding: 15px;
-                    font-size: 0.9rem;
-                }
-            }
-
-            @media (max-width: 576px) {
-                .hero {
-                    padding: 50px 0;
-                }
-                
-                .hero h1 {
-                    font-size: 1.8rem;
-                }
-                
-                .btn {
-                    padding: 12px 25px;
-                    font-size: 0.9rem;
-                }
-                
-                .categories, .product-grid {
-                    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-                }
-            }
-        </style>
-<script type="application/ld+json">
-    {
-    "context": "https://schema.org", //ресурс schema.org
-      "@type": "FAQPage", //тип faq страницы
-  "mainEntity": [ //главные события
-    {
-      "@type": "Question", //тип вопрос ответ
-      "name": "Как заказать косметику",
-      "acceptedAnswer": { //решенный ответ
-        "@type": "Answer", //тип ответа
-        "text": "Перейдите в каталог косметики, выберите желаемый товар и добавьте его в корзину"
-      }
-    }
-]
-},
-      "@type": "ItemList", //тип списков
-  "name": "Полезные разделы сайта",
-  "itemListElement": [ //событие списка
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Официальный сайт",
-      "url": "https://seo-iota-beryl.vercel.app/"
-    },
-      "@type": "BreadcrumbList", //тип хлебные крошки
-  "itemListElement": [ //событие списка
-    {
-      "@type": "ListItem", //элемент списка
-      "position": 1, //нумерация позиций
-      "name": "Корейская косметика премиум-класса", //название
-      "item": "https://seo-iota-beryl.vercel.app/" //ссылка
-    }
-  ],
-    "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Beauty street",
-    "postalCode": "141200",
-    "addressLocality": "Cupertino"
-    },
-    "telephone": "+7 (911) 228–52–67",
-    "email": "KBTY_original@gmail.com",
-    "@graph": [ //сразу несколько типов
-        {//тип 1
-        "@type": "WebPage", //описание что за сайт
-        "name": "Korean косметика",
-        "description": "Сайт для покупки оригинальной Корейской косметики с доставкой по РФ",
-        "url": "https://seo-iota-beryl.vercel.app/"
-        },
-    ]
-}
-    </script>
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="manifest" href="/site.webmanifest" />
-    </head>
-    <body>
-        <!-- Promo Banner -->
-        <div class="promo-banner">
-            <span>🎉 Бесплатная доставка при заказе от 3000 ₽ | Скидка 15% на первый заказ</span>
-        </div>
-
-        <!-- Header -->
-        <header>
-            <div class="container header-container">
-                <a href="#" class="logo">
-                    <i class="fas fa-spa"></i>
-                    K<span>Beauty</span>
-                </a>
-                
-                <div class="search-bar">
-                    <input type="text" placeholder="Искать корейскую косметику...">
-                    <button><i class="fas fa-search"></i></button>
-                </div>
-                
-                <div class="header-icons">
-                    <a href="#"><i class="far fa-user"></i></a>
-                    <a href="#"><i class="far fa-heart"></i></a>
-                    <a href="#" class="cart-icon">
-                        <i class="fas fa-shopping-bag"></i>
-                        <span class="cart-count">3</span>
-                    </a>
-                </div>
-            </div>
-            
-            <!-- Navigation -->
-            <nav>
-                <div class="container nav-container">
-                    <ul class="nav-links">
-                        <li><a href="index.html">Главная</a></li>
-                        <li>
-                            <a href="#">Категории <i class="fas fa-chevron-down"></i></a>
-                            <ul class="dropdown">
-                                <li><a href="#">Уход за кожей</a></li>
-                                <li><a href="#">Маски для лица</a></li>
-                                <li><a href="#">Солнцезащитные средства</a></li>
-                                <li><a href="#">Декоративная косметика</a></li>
-                                <li><a href="#">Уход за волосами</a></li>
-                                <li><a href="#">Пробиотики и БАДы</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Популярные бренды</a></li>
-                        <li><a href="news.html">Блог</a></li>
-                        <li><a href="promo.html">Акции</a></li>
-                        <li><a href="port.html">Портфолио</a></li>
-                        <li><a href="comms.html">Отзывы</a></li>
-                    </ul>
-                    
-                    <div style="color: white; display: flex; align-items: center;">
-                        <i class="fas fa-phone-alt" style="margin-right: 10px;"></i>
-                        <span>8 (800) 123-45-67</span>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!-- Hero Section -->
-        <!-- <section class="hero">
-            <div class="container">
-                <h1>Корейская косметика премиум-класса</h1>
-                <p>Откройте для себя инновационные средства по уходу за кожей из Южной Кореи. Только оригинальная продукция с доставкой по всей России.</p>
-                <a href="#" class="btn">Смотреть коллекцию</a>
-                <a href="#" class="btn btn-secondary">Узнать больше</a>
-            </div>
-        </section> -->
-
+    </style>
 </head>
 <body>
     <!-- Promo Banner (как на главной) -->
